@@ -23,6 +23,9 @@ Book::Book(string name, string author, int publicYear)
 
 void Book::addInfo(string info)
 {
+	if (info == " " || info == "" || info == "  ") {
+		throw new BookException;
+	}
 	resume = info;
 }
 

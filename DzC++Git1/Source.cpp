@@ -29,6 +29,23 @@ int main() {
 	boo.delPub("Magazine", "Author1");
 	boo.delPub("Magazine", "Author");
 	boo.showInfo();
+	cout << "========================================\n";
+	cout << "exeptions\n";
+	try {
+		Magazine f("1", "2", 2000);//info = " "
+	}
+		catch(PublicationException* obj){
+			cout << obj->Message() << endl;
+	}
+	cout << "==========\n";
 
-	return 0;
+	try{
+		Magazine f("1", "2", -1);
+	}
+		catch (PublicationException* obj) {
+		cout << obj->Message() << endl;
+	}
+
+
+		return 0;
 }

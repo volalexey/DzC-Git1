@@ -25,6 +25,9 @@ Magazine::Magazine(string name, string author, int publicYear)
 
 void Magazine::addInfo(string info)
 {
+	if (info == " " || info == "" || info == "  ") {
+		throw new BookException;
+	}
 	articles.push_back(info);
 	cout << "one more?\n 1.yes  2.no\n";
 	int x = 0;

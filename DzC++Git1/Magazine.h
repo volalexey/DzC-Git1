@@ -2,6 +2,7 @@
 #include "Publication.h"
 #include <vector>
 #include <algorithm>
+
 class Magazine :    public Publication
 {
 protected:

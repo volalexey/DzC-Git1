@@ -9,9 +9,15 @@ Publication::Publication()
 
 Publication::Publication(string name, string author, int publicYear)
 {
+    if (publicYear > 0) {
+
+    
     this->name = name;
     this->author = author;
-    this->publicYear = publicYear;
+    this->publicYear = publicYear;}
+    else {
+        throw new EditionYearException;
+    }
 }
 
 string Publication::getName() const
