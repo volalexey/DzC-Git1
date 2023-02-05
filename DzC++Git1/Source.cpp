@@ -11,9 +11,9 @@ int main() {
 	/*Book b("Book", "author", 2022);
 	b.showInfo();*/
 
-	Magazine c("Magazine", "Author", 2023);
+	/*Magazine c("Magazine", "Author", 2023);
 	Magazine d;
-	c.showInfo();
+	c.showInfo();*/
 
 	return 0;
 }
