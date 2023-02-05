@@ -21,7 +21,7 @@ string Publication::getName() const
 
 string Publication::getAuthor() const
 {
-    return name;
+    return author;
 }
 
 int Publication::getPublicYear() const
