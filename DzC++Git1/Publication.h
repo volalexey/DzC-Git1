@@ -10,7 +10,6 @@ private:
 	string name;
 	string author;
 	int publicYear;
-	string info;
 public:
 	Publication();
 	Publication(string name, string author, int publicYear);
@@ -23,7 +22,7 @@ public:
 	void setAuthor(string author);
 	void setPublicYear(int publicYear);
 
-	void addInfo(string info);
+	virtual void addInfo(string info) = 0;
 	void showInfo() const;
 };
 
